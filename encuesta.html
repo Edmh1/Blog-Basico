@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio De Pasiones</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Rincón de Hobbies y pasiones 🚀🎨🎮📚</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planDeDesarrollo.html">Plan de Desarrollo</a></li>
+                <li><a href="motivacion.html">Motivación</a></li>
+                <li><a class="active" href="encuesta.html">Encuesta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor-formulario">
+            <form>
+                <label for="nombre"><b>Nombre:</b></label>
+                <input type="text" name="nombre" id="nombre" required minlength="3" placeholder="Nombre">
+                <label for="apellido"><b>Apellido:</b></label>
+                <input type="text" name="apellido" id="apellido" required minlength="3" placeholder="Apellido">
+                <label for="pais"><b>Pais:</b></label>
+                <select name="pais" id="pais">
+                    <option value="colombia">Colombia</option>
+                    <option value="chile">Chile</option> 
+                    <option value="peru">Peru</option>
+                    <option value="españa">España</option>
+                    <option value="panama">Panama</option>
+                    <option value="ecuador">Ecuador</option>
+                </select>
+                <label for="hobby"><b>¿Cual de estos hobbies practicas?</b></label><br>
+                <input type="checkbox" name="hobby" id="hobby" value="musica"><i>Musica</i> 
+                <input type="checkbox" name="hobby" id="hobby" value="ejercicio"><i>Ejercicio</i> 
+                <input type="checkbox" name="hobby" id="hobby" value="programacion"><i>Programación</i> 
+                <input type="checkbox" name="hobby" id="hobby" value="yoga"><i>Yoga</i><br><br>
+                <label for="frecuencia"><b>¿Con que frecuencia practicas el que más te gusta?</b></label><br>
+                <input type="radio" name="frecuencia" id="frecuencia" value="1"><i>1 vez por semana</i> 
+                <input type="radio" name="frecuencia" id="frecuencia" value="2"><i>2 veces por semana</i> 
+                <input type="radio" name="frecuencia" id="frecuencia" value="4"><i>4 veces por semana</i> 
+                <input type="radio" name="frecuencia" id="frecuencia" value="Otra"><i>Otra</i><br><br>
+                <label for="comentarios"><b>Comentarios:</b></label>
+                <textarea name="comentarios" id="comentarios" placeholder="Cuenta tu experiencia"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+</html>
